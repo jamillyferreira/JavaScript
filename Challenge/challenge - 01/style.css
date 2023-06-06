@@ -1,0 +1,27 @@
+body {
+    background-color: aliceblue;
+}
+
+section.container {
+    background-color: rgb(120, 216, 179);
+    border-radius: 10px;
+    padding-top: 10px;
+    width: 350px;
+    height: 360px;
+    text-align: center;
+    margin: auto;
+}
+
+section.container .input {
+    margin-bottom: 10px;
+    
+}
+
+section.container .result {
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 10px;
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+}

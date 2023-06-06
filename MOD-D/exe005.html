@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Qual é a sua nacionalidade</h1>
+    <input type="text" name="text1" id="text1">
+    <input type="button" value="Ok" onclick="confirmar()">
+    <div class="res">Resultado</div>
+
+    <script>
+
+        function confirmar(){
+            var text = document.querySelector('input#text1')
+            var res = document.querySelector('div.res')
+            var valor = (text.value)
+            res.innerHTML = `Você esta vivendo em ${valor}`
+
+            if (valor =='brasil') {
+                res.innerHTML += `<br> voce é brasileiro`
+                
+            } else res.innerHTML += `<br> voce é estrageiro`
+            
+            
+        }
+       
+    </script>
+</body>
+</html>
