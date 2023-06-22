@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Construtores e instâncias de objeto</h1>
+<p>complexo</p>
+<script>
+    function Person(first, last, age, gender, interests){
+        this.name = {
+            'first': first,
+            'last': last,
+        }
+        this.age = age;
+        this.gender = gender;
+        this.interests = interests;
+        // funcão construtor
+        this.bio = function() {
+            let pronome;
+            if(gender === 'masc' || gender === 'masculino' || gender === 'M' || gender === 'm'){
+                pronome =  'Ele';
+                alert(`${this.name.first} ${this.name.last} tem ${this.age} anos de idade. ${pronome} gosta de ${this.interests[0]} e ${this.interests[1]}`);
+
+            } else if(gender === ' fem' || gender === 'feminino' || gender === 'F' || gender === 'f'){
+                pronome = 'Ela';
+                alert(`${this.name.first} ${this.name.last} tem ${this.age} anos de idade. ${pronome} gosta de ${this.interests[0]} e ${this.interests[1]}`);
+            }
+            
+        }
+
+        this.greeting = function() { 
+            alert(`oi eu sou ${this.name.first}`);
+        }
+
+    }
+    // cria uma instancia de objeto a partir dela:
+        let person1 = new Person (
+            'jamilly', 'ferreira', 23, 'f', ['musica', 'filmes']
+        )
+    
+    
+
+</script>
+</body>
+</html>
